@@ -45,3 +45,6 @@ def GALLARY(request):
 
 def HOME(request):
     return render(request,"index.html")
+
+def SERVICE(request):
+    return render(request,"services.html")
