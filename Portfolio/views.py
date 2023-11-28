@@ -25,3 +25,6 @@ def saveEnquiry(request):
 
 def GALLARY(request):
     return render(request,"gallery-single.html")
+
+def login(request):
+    return render(request,"gallery.html")
