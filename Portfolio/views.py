@@ -6,3 +6,6 @@ def ABOUT(request):
          'title':'portfolio'
     }
     return render(request,"about.html",data)
+def CONTACT(request):
+    return render(request,"contact.html")
+
