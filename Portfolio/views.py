@@ -28,3 +28,14 @@ def GALLARY(request):
 
 def login(request):
     return render(request,"gallery.html")
+
+def saveEnquiry1(request):
+    n=''
+    if request.method=="POST":
+        name=request.POST.get('email')
+        name=request.POST.get('password')
+        data=Service(title=email,description=password)
+        en.save()
+        n='data inserted'
+
+    return render(request,"gallery.html",{'n':n})
