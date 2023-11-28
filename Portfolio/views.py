@@ -39,3 +39,6 @@ def saveEnquiry1(request):
         n='data inserted'
 
     return render(request,"gallery.html",{'n':n})
+
+def GALLARY(request):
+    return render(request,"sample-inner-page.html")
