@@ -23,3 +23,5 @@ def saveEnquiry(request):
 
     return render(request,"contact.html",{'n':n})
 
+def GALLARY(request):
+    return render(request,"gallery-single.html")
