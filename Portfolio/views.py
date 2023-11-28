@@ -6,6 +6,20 @@ def ABOUT(request):
          'title':'portfolio'
     }
     return render(request,"about.html",data)
+
 def CONTACT(request):
     return render(request,"contact.html")
+
+def saveEnquiry(request):
+    n=''
+    if request.method=="POST":
+        name=request.POST.get('name')
+        name=request.POST.get('email')
+        name=request.POST.get('phone')
+        name=request.POST.get('message')
+        data=Service(title=name,description=email,date=phone,status=message)
+        en.save()
+        n='data inserted'
+
+    return render(request,"contact.html",{'n':n})
 
