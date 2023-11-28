@@ -48,3 +48,8 @@ def HOME(request):
 
 def SERVICE(request):
     return render(request,"services.html")
+
+def UPDATE(request):
+    return render(request,"gallery.html")
+
+    
