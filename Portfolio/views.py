@@ -42,3 +42,6 @@ def saveEnquiry1(request):
 
 def GALLARY(request):
     return render(request,"sample-inner-page.html")
+
+def HOME(request):
+    return render(request,"index.html")
