@@ -1,0 +1,116 @@
+body{
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
+    margin-top: 50px;
+}
+.stay-focus{
+    display: flex;
+}
+h1{
+    font-size: 40px;
+}
+
+.width-half{
+    width: 50%;
+    padding: 10px 20px;
+}
+.description{
+    font-size: 17px;
+    padding: 20px 80px;
+}
+.width-half img{
+    width: 70%;
+}
+.orange-color{
+    color: orange;
+}
+.box-shadow{
+    border-left: 5px solid red;
+    border-radius: 3px;
+    padding-left: 10px; 
+}
+.button{
+    text-decoration: none;
+    background-color: rgb(255, 38, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.center-position{
+    text-align: center;
+}
+.mission-item{
+    display: flex;
+}
+.three-goals{
+    width: 30%;  
+    margin-left: 1%;
+    margin-right: 1%; 
+}
+.three-goals img{
+    width: 50%;
+}
+#sky-color{
+    background-color: skyblue;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+#pink-color{
+    background-color: pink;
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+}
+#yellow-color{
+    background-color: #FCFE99;
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+}
+.Developing{
+    display: flex;
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    margin: 60px;
+    padding-left: 70px;
+}
+#coding-img{
+    width: 50%;
+    margin-left: 20px;
+}
+#developing-half{
+    width: 50%;
+    font-size: 17px;
+}
+.global-community{
+    display: flex;
+    background-image: url(images/shape-1.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin: 50px;
+    padding-left: 60px;
+}
+#global-img{
+    width: 50%;
+    margin-left: 80px;   
+}
+.Stay-safe{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 40px;
+    padding: 20px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0%;
+    padding:25px;
+    left: 0;
+    bottom: 0;
+}
+#footer-color{
+    font-family: fantasy;
+    color: tomato;  
+}
