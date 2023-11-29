@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Service",
     "Portfolio",
+    # "Service.apps.ServiceConfig",
 ]
 
 MIDDLEWARE = [
