@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from Service.models import Service
+from .models import Contact
 
 def ABOUT(request):
     data={
@@ -8,17 +9,15 @@ def ABOUT(request):
     }
     return render(request,"about.html",data)
 
-def CONTACT(request):
-    return render(request,"contact.html")
 
 def saveEnquiry(request):
     n=''
     if request.method=="POST":
         name=request.POST.get('name')
         email=request.POST.get('email')
-        phone=request.POST.get('phone')
+        subject=request.POST.get('subject')
         message=request.POST.get('message')
-        data=Service(title=name,description=email,date=phone,status=message)
+        data=Contact(name=name,email=email,subject=subject,message=message)
         data.save()
         n='data inserted'
 
@@ -32,12 +31,12 @@ def login(request):
 
 def saveEnquiry1(request):
     n=''
-    if request.method=="POST":
-        email=request.POST.get('email')
-        password=request.POST.get('password')
-        data=Service(title=email,description=password)
-        data.save()
-        n='data inserted'
+    
+    email=request.POST.get('email')
+    password=request.POST.get('password')
+    data=Service(title=email,description=password)
+    data.save()
+    n='data inserted'
 
     return render(request,"gallery.html",{'n':n})
 
@@ -45,6 +44,8 @@ def GALLARY(request):
     return render(request,"sample-inner-page.html")
    
 def CONTACT(request):
+    if request.method=="POST":
+        return saveEnquiry(request)
     return render(request,"contact.html")
 
 def GALLARY(request):
